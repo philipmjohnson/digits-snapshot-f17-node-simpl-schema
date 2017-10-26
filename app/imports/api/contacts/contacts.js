@@ -33,6 +33,7 @@ export const ContactsSchema = new SimpleSchema({
     type: String,
     optional: false,
     max: 200,
+    regEx: /\d{3}-\d{3}-\d{4}/,
   },
   email: {
     label: 'email',
